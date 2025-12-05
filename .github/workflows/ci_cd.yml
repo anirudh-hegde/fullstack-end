@@ -27,3 +27,9 @@ jobs:
 
       - name: List running containers
         run: docker ps -a
+
+      - name: Logs for frontend
+        run: docker compose logs frontend 
+
+      - name: Logs for backend
+        run: docker compose logs backend
