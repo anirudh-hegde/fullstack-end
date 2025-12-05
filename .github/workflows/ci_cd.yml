@@ -28,6 +28,9 @@ jobs:
       - name: List running containers
         run: docker ps -a
 
+      - name: Wait for 6 minutes
+        run: sleep 360
+
       - name: Logs for frontend
         run: docker compose logs frontend 
 
